@@ -27,7 +27,7 @@
       <header class="header-box">
         <div class="title-box">
           <p>Rock</p>
-          <p>Papper</p>
+          <p>Paper</p>
           <p>Scissors</p>
           <p>Lizard</p>
           <p>Spock</p>
@@ -45,7 +45,11 @@
             src="assets/images/bg-pentagon.svg"
             alt="Pentagon image with an option in every corner"
           />
-          <button class="button-wrap lizard" data-value="lizard">
+          <button
+            id="player-option"
+            class="button-wrap lizard"
+            data-value="lizard"
+          >
             <div class="badge">
               <img
                 class="option-img"
@@ -54,7 +58,11 @@
               />
             </div>
           </button>
-          <button class="button-wrap spock" data-value="spock">
+          <button
+            id="player-option"
+            class="button-wrap spock"
+            data-value="spock"
+          >
             <div class="badge">
               <img
                 class="option-img"
@@ -63,7 +71,11 @@
               />
             </div>
           </button>
-          <button class="button-wrap scissors" data-value="scissors">
+          <button
+            id="player-option"
+            class="button-wrap scissors"
+            data-value="scissors"
+          >
             <div class="badge">
               <img
                 class="option-img"
@@ -72,7 +84,11 @@
               />
             </div>
           </button>
-          <button class="button-wrap papper" data-value="paper">
+          <button
+            id="player-option"
+            class="button-wrap paper"
+            data-value="paper"
+          >
             <div class="badge">
               <img
                 class="option-img"
@@ -81,7 +97,7 @@
               />
             </div>
           </button>
-          <button class="button-wrap rock" data-value="rock">
+          <button id="player-option" class="button-wrap rock" data-value="rock">
             <div class="badge">
               <img
                 class="option-img"
@@ -111,9 +127,13 @@
         <div id="score-screen" class="results-box hidden">
           <div class="result-box player">
             <p>You picked</p>
-            <div class="button-wrap scissors match">
+            <div class="button-wrap paper match">
               <div class="badge">
-                <img id="player-pick" alt="" />
+                <img
+                  id="player-pick"
+                  class="option-img"
+                  alt="Image of player choice"
+                />
               </div>
             </div>
           </div>
@@ -124,9 +144,13 @@
           </div>
           <div class="result-box machine">
             <p>The house picked</p>
-            <div class="button-wrap spock match">
+            <div class="button-wrap rock match">
               <div class="badge">
-                <img id="house-pick" alt="" />
+                <img
+                  id="house-pick"
+                  class="option-img"
+                  alt="Image of house choice"
+                />
               </div>
             </div>
           </div>

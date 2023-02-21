@@ -26,21 +26,22 @@ const options = ["rock", "paper", "scissors", "lizard", "spock"];
 let score = 0;
 document.querySelector("#score").innerHTML = `${score}`;
 
-const playerOptions = document.querySelectorAll(".button-wrap");
+const playerOptions = document.querySelectorAll("#player-option");
 
 playerOptions.forEach((item) => {
   item.addEventListener("click", function choice(value) {
     const playerChoice = item.getAttribute("data-value");
     const housePick = document.querySelector("#house-pick");
     const playerPick = document.querySelector("#player-pick");
+
     const resultText = document.querySelector("#result-text");
     const statusText = document.querySelector("#status-text");
 
     const randomNumber = Math.floor(Math.random() * 5);
     const machineChoice = options[randomNumber];
 
-    housePick.setAttribute("src", `assets/images/icon-${machineChoice}.svg`);
     playerPick.setAttribute("src", `assets/images/icon-${playerChoice}.svg`);
+    housePick.setAttribute("src", `assets/images/icon-${machineChoice}.svg`);
 
     choicesScreen.classList.add("hidden");
     resultScreen.classList.remove("hidden");
