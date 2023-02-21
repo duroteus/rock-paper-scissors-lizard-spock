@@ -12,10 +12,13 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="./styles/choices.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/results.css" />
 
-    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
 
     <style></style>
   </head>
@@ -38,22 +41,32 @@
       <main>
         <div id="choices-screen" class="">
           <img
+            class="pentagon"
             src="assets/images/bg-pentagon.svg"
             alt="Pentagon image with an option in every corner"
           />
           <button class="button-wrap lizard" data-value="lizard">
             <div class="badge">
-              <img src="assets/images/icon-lizard.svg" alt="Lizard option" />
+              <img
+                class="option-img"
+                src="assets/images/icon-lizard.svg"
+                alt="Lizard option"
+              />
             </div>
           </button>
           <button class="button-wrap spock" data-value="spock">
             <div class="badge">
-              <img src="assets/images/icon-spock.svg" alt="Spock option" />
+              <img
+                class="option-img"
+                src="assets/images/icon-spock.svg"
+                alt="Spock option"
+              />
             </div>
           </button>
           <button class="button-wrap scissors" data-value="scissors">
             <div class="badge">
               <img
+                class="option-img"
                 src="assets/images/icon-scissors.svg"
                 alt="Scissors option"
               />
@@ -61,24 +74,34 @@
           </button>
           <button class="button-wrap papper" data-value="paper">
             <div class="badge">
-              <img src="assets/images/icon-paper.svg" alt="Paper option" />
+              <img
+                class="option-img"
+                src="assets/images/icon-paper.svg"
+                alt="Paper option"
+              />
             </div>
           </button>
           <button class="button-wrap rock" data-value="rock">
             <div class="badge">
-              <img src="assets/images/icon-rock.svg" alt="Rock option" />
+              <img
+                class="option-img"
+                src="assets/images/icon-rock.svg"
+                alt="Rock option"
+              />
             </div>
           </button>
         </div>
 
         <div id="modal" class="modal">
-          <div class="modal-exit">
-            <button id="closeModal" onclick="closeModal()">
-              <img src="assets/images/icon-close.svg" alt="" />
-            </button>
-          </div>
           <div class="modal-container">
-            <h1>Rules</h1>
+            <div class="modal-header">
+              <h1>Rules</h1>
+              <div class="modal-exit">
+                <button id="closeModal" onclick="closeModal()">
+                  <img src="assets/images/icon-close.svg" alt="" />
+                </button>
+              </div>
+            </div>
             <img src="assets/images/image-rules-bonus.svg" alt="" />
           </div>
         </div>
@@ -110,14 +133,14 @@
         </div>
       </div>
 
-      <footer class="attribution">
+      <footer class="footer">
+        <button id="rules" class="rules" onclick="openModal()">Rules</button>
         <div>
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
           >. Coded by <a href="https://github.com/duroteus">Gustavo A.</a>.
         </div>
-        <button id="rules" class="rules" onclick="openModal()">Rules</button>
       </footer>
     </div>
 

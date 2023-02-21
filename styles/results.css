@@ -1,0 +1,55 @@
+.match-box {
+  position: relative;
+  width: 100%;
+}
+
+.match {
+  position: static;
+}
+
+.results-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result-box {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.result-box p {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.rematch h2,
+#status-text {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+}
+
+#status-text {
+  font-size: 1.5rem;
+}
+
+.rematch button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.hidden {
+  display: none;
+}

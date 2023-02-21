@@ -1,0 +1,39 @@
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid var(--header-outline);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+
+.header-box .title-box {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 0.9;
+}
+
+.header-box .score-box {
+  background: white;
+  text-align: center;
+  align-content: center;
+  border-radius: 8px;
+  width: 50%;
+  height: 6rem;
+  padding: 0.5rem;
+}
+
+.header-box .score-box p {
+  color: var(--score-text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.header-box .score-box span {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--dark-text);
+}

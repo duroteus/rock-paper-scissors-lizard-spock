@@ -44,6 +44,15 @@
   justify-content: center;
   background: rgba(37, 37, 37, 0.812);
   visibility: hidden;
+  z-index: 1;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .modal-container {
@@ -54,20 +63,11 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--dark-text);
-}
-
-.modal-container h1 {
-  margin-bottom: 1.5rem;
+  max-width: 90%;
 }
 
 .modal-container img {
-  width: 30rem;
-}
-
-.modal-exit {
-  position: absolute;
-  right: 26.5rem;
-  top: 10.5rem;
+  width: 100%;
 }
 
 .modal-exit button {

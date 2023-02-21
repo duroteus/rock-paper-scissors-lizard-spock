@@ -1,0 +1,68 @@
+main {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.pentagon {
+  width: 15rem;
+}
+
+.option-img {
+  width: 60%;
+}
+
+.button-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+
+.lizard {
+  background: hsl(261, 72%, 63%);
+  box-shadow: 1px 5px hsl(261, 51%, 51%);
+  left: -1rem;
+  bottom: -3rem;
+}
+
+.spock {
+  background: hsl(189, 58%, 57%);
+  box-shadow: 1px 5px hsl(189, 53%, 42%);
+  left: -4rem;
+  top: 3rem;
+}
+
+.papper {
+  background: hsl(230, 89%, 65%);
+  box-shadow: 1px 5px hsl(230, 54%, 50%);
+  top: 3rem;
+  right: -4rem;
+}
+
+.rock {
+  background: hsl(349, 70%, 56%);
+  box-shadow: 1px 5px hsl(349, 64%, 46%);
+  bottom: -3rem;
+  right: -1rem;
+}
+
+.scissors {
+  background: hsl(40, 84%, 53%);
+  box-shadow: 1px 5px hsl(39, 87%, 42%);
+  top: -4rem;
+  right: 5rem;
+}
+
+.badge {
+  background: white;
+  box-shadow: 0px -5px rgb(213, 213, 213);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
