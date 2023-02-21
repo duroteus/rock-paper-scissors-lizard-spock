@@ -125,7 +125,7 @@ playerOptions.forEach((item) => {
           break;
         case "spock":
           resultText.innerHTML = "You Lose";
-          statusText.innerHTML = "Spock shamshes Scissors";
+          statusText.innerHTML = "Spock smashes Scissors";
           break;
         default:
           break;
