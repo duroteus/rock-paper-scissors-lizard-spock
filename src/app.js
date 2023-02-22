@@ -40,8 +40,8 @@ playerOptions.forEach((item) => {
     const randomNumber = Math.floor(Math.random() * 5);
     const machineChoice = options[randomNumber];
 
-    playerPick.setAttribute("src", `assets/images/icon-${playerChoice}.svg`);
-    housePick.setAttribute("src", `assets/images/icon-${machineChoice}.svg`);
+    playerPick.setAttribute("src", `./assets/icon-${playerChoice}.svg`);
+    housePick.setAttribute("src", `./assets/icon-${machineChoice}.svg`);
 
     choicesScreen.classList.add("hidden");
     resultScreen.classList.remove("hidden");

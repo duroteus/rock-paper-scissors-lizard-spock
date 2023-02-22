@@ -1,0 +1,102 @@
+.match-box {
+  position: relative;
+  width: 100%;
+}
+
+.match {
+  position: static;
+}
+
+.result-flex-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.results-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.result-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.result-box p {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.rematch h2,
+#status-text {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+}
+
+#status-text {
+  font-size: 1.5rem;
+}
+
+.rematch button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.button-wrap-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+}
+
+.badge-result {
+  background: white;
+  box-shadow: 0px -5px rgb(213, 213, 213);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .result-flex-box {
+    max-width: 25%;
+  }
+
+  .result-box {
+    align-items: center;
+  }
+
+  .button-wrap-result {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .badge-result {
+    width: 8rem;
+    height: 8rem;
+  }
+}

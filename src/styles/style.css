@@ -57,15 +57,16 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+
   text-transform: uppercase;
   color: var(--dark-text);
   letter-spacing: 1px;
+  font-size: 1.5rem;
+
   border: 2px solid var(--header-outline);
   border-radius: 10px;
-  width: 4.5rem;
-  height: 2rem;
-  font-size: 0.7rem;
   background: transparent;
+  padding: 1rem;
 
   transition: 0.1s color;
 }
